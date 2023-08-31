@@ -1,0 +1,20 @@
+name: Create repo
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  check-issue-title:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check issue title
+        run: |
+          title="${{ github.event.issue.title }}"
+          if [[ $title =~ ^octocat ]]; then
+          echo "Issue title starts with 'octocat'"
+          exit 0
+          else
+          echo "Issue title did not start with 'octocat'"
+          exit 1
+          fi
