@@ -11,7 +11,7 @@ title="${{ github.event.issue.title }}"
 ```
 This provides an opportunity for an attacker to exploit the workflow with an issue titled `octocat"; ls -l $GITHUB_WORKSPACE"`. Using this title, the script looks like the following...
 ```
-title="octocat"; ls -l $GITHUB_WORKSPACE""
+title="octocat"; ls -l $GITHUB_WORKSPACE"
 ```
 
 Let's create a new issue with this title and see what happens. We observe that the workflow runs the command `ls -l $GITHUB_WORKSPACE`!  
