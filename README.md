@@ -14,4 +14,11 @@ This provides an opportunity for an attacker to exploit the workflow with an iss
 title="octocat"; ls -l $GITHUB_WORKSPACE""
 ```
 
-Let's create a new issue with this title and see what happens. We observe that the workflow runs the command `ls -l $GITHUB_WORKSPACE`!
+Let's create a new issue with this title and see what happens. We observe that the workflow runs the command `ls -l $GITHUB_WORKSPACE`!  
+
+<img width="1042" alt="Screenshot 2023-08-30 at 7 38 43 PM" src="https://github.com/robandpdx/workflow-script-injection/assets/95243761/e3fa3917-2834-45cc-a297-d25614c3185e">
+
+Ok. Big deal. So we were able to see what is in the workspace directory. Who cares?  
+Now let's try something a little more sinister...
+
+## Exercise 2
