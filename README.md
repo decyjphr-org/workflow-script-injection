@@ -9,6 +9,8 @@ The [Check issue title](.github/workflows/check-issue-title.yml) workflow uses t
 ```
 title="${{ github.event.issue.title }}"
 ```
-This provides an opportunity for an attacker to exploit the workflow with an issue titled `a"; ls $GITHUB_WORKSPACE"`. Using this title, the script looks like the following...
+This provides an opportunity for an attacker to exploit the workflow with an issue titled `octocat"; ls -l $GITHUB_WORKSPACE"`. Using this title, the script looks like the following...
 ```
-title="a"; ls $GITHUB_WORKSPACE
+title="octocat"; ls -l $GITHUB_WORKSPACE""
+```
+
