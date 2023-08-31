@@ -20,7 +20,7 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const comment="${{ github.event.issue_comment.comment }}"
+            const comment="${{ github.event.comment.body }}"
             if (comment.startsWith('octocat')) {
               console.log("Issue comment starts with 'octocat'")
             } else {
