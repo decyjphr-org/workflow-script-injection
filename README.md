@@ -33,10 +33,10 @@ The [Check issue comment](.github/workflows/check-issue-comment.yml) workflow us
 ```
 const comment="${{ github.event.comment.body }}"
 ```
-This provides an opportunity for an attacker to exploit the workflow with an issue comment `octocat";console.log('WTF!!!');`. Using this title, the script looks like the following...
+This provides an opportunity for an attacker to exploit the workflow with an issue comment `octocat";console.log('WTF!!!');//`. Using this title, the script looks like the following...
 ```
-const comment="octocat";console.log('WTF!!!');
+const comment="octocat";console.log('WTF!!!');//"
 ```
 
-Let's create a new issue comment with this body and see what happens. We observe that the workflow runs the command `console.log('WTF!!!');`!  
+Let's create a new issue comment with this body and see what happens. We observe that the workflow runs the command `console.log('WTF!!!');//`!  
 
