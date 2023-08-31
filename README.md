@@ -14,3 +14,4 @@ This provides an opportunity for an attacker to exploit the workflow with an iss
 title="octocat"; ls -l $GITHUB_WORKSPACE""
 ```
 
+Let's create a new issue with this title and see what happens. We observe that the workflow runs the command `ls -l $GITHUB_WORKSPACE`!
