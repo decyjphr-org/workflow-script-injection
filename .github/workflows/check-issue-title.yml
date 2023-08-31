@@ -1,4 +1,4 @@
-name: Create repo
+name: Check issue title
 
 on:
   issues:
