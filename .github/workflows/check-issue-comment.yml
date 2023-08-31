@@ -22,6 +22,6 @@ jobs:
               console.log("Issue comment starts with 'octocat'")
             } else {
               console.log("Issue comment did not start with 'octocat'")
-              exit(1)
+              process.exit(1)
               //throw new Error("Issue comment did not start with 'octocat'");
             }
