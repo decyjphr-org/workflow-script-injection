@@ -50,7 +50,7 @@ Let's create a new issue comment with this body and see what happens. We observe
 
 ## Exercise 6 - Mitigate using GitHub Action
 ### Creating an Actions workflow to scan Workflow files using CodeQL
-In this section we are going to create an Actions workflow file to scan existing workflows for any security weaknesses.
+In this section we are going to create an Actions workflow to scan existing workflows for any security weaknesses.
 
 In your repository, `click` on the `Actions` tab
 
