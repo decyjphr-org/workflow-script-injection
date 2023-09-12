@@ -1,4 +1,4 @@
-name: Check issue title with action
+name: Check issue title with action mitigated
 
 on:
   issues:
@@ -14,6 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Check issue title
-        uses: ./.github/actions/check-issue-title
+        uses: ./.github/actions/check-issue-title-mitigated
         with:
           issue-title: ${{ github.event.issue.title }}
