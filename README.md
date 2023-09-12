@@ -52,7 +52,7 @@ Let's create a new issue comment with this body and see what happens. We observe
 ### Creating an Actions workflow to scan Workflow files using CodeQL
 In this section we are going to create an Actions workflow to scan existing workflows for any security weaknesses.
 
-In your repository, `click` on the [`Actions`]((/actions) tab
+In your repository, `click` on the [`Actions`](/actions) tab
 
 **NOTE:** If `Actions`tab is not available, see [enabling Actions section in the documentation](https://docs.github.com/en/enterprise-cloud@latest/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository)
 
@@ -76,7 +76,7 @@ Edit the workflow's trigger section as follows:
 **NOTE:** Autobuild is only necessary for compiled languages, since we are using the `javascript` extractor, this is not really necessary.
 - Commit this file into the repo in the `default`branch.
 
-When the file was committed, it got `pushed` into the repository and the `Actions WorkFlow CodeQL` should be triggered. Now `click` on the [`Actions`]((/actions) tab and you should see the workflow being scheduled to run based on the `push` event. 
+When the file was committed, it got `pushed` into the repository and the `Actions WorkFlow CodeQL` should be triggered. Now `click` on the [`Actions`](/actions) tab and you should see the workflow being scheduled to run based on the `push` event. 
 
 Monitor the workflow and ensure that it finishes successfully.
 
