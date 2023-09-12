@@ -65,8 +65,7 @@ The `Check issue title` step should look like this after our edits...
 
 Now let's create a new issue with the title we used to exploit the script injection vulnerability we saw in exercise 1 to see if we have mitigated the issue. Create a new issue titled `octocat"; ls -l $GITHUB_WORKSPACE"`.
 
-![Screenshot 2023-09-11 at 5 20 23 PM](https://github.com/robandpdx/workflow-script-injection/assets/95243761/5385f064-8410-4ebe-a81e-0a7f0b31e511)
-
+<img width="1002" alt="Screenshot 2023-09-11 at 5 24 09 PM" src="https://github.com/robandpdx/workflow-script-injection/assets/95243761/c3026073-eb65-443e-96e7-9ceb560fd5eb">
 
 We find that the workflow does not execute the `ls -l $GITHUB_WORKSPACE` command. Success!
 
