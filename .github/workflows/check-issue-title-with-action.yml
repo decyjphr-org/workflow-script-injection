@@ -1,4 +1,4 @@
-name: Check issue title
+name: Check issue title with action
 
 on:
   issues:
