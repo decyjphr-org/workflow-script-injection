@@ -96,7 +96,7 @@ Now let's create a new issue comment with the contents we used to exploit the sc
 
 <img width="1002" alt="Screenshot 2023-09-12 at 10 30 57 AM" src="https://github.com/robandpdx/workflow-script-injection/assets/95243761/36134189-581a-41c8-9fa2-2401f01c0881">
 
-We find that the workflow does not execute the `console.log('WTF!!!');` command. Success!
+We find that the workflow does not execute the `console.log('WTF!!!');` code. Success!
 
 ## Exercise 6 - Mitigate by using a github action
 
