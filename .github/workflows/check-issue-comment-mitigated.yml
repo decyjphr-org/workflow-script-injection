@@ -1,4 +1,4 @@
-name: Check issue comment
+name: Check issue comment mitigated
 
 on:
   issue_comment:
