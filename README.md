@@ -84,6 +84,8 @@ When the file is committed, it will generate a `push` event and the `Actions Wor
 
 Monitor the workflow run and ensure that it finishes successfully.
 
+_**NOTE:** For your convenience a sample of this workflow is available in [`/solutions`](/solutions) directory._
+
 Now, click on the `Security` tab. And you should see the `Security Overview` page with _**two**_ alerts created under `Code Scanning` .
 
 ### Analysing and fixing the Alert
