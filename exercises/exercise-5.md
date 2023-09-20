@@ -2,7 +2,7 @@
 ## Creating an Actions workflow to scan Workflow files using CodeQL
 In this section we are going to create an Actions workflow to scan existing workflows for any security weaknesses.
 
-In your repository, `click` on the [`Actions`](../../actions) tab
+In your repository, `click` on the [`Actions`](../../../actions) tab
 
 _**NOTE:** If `Actions`tab is not available (this should not happen since you are looking to scan Actions workflows after all), please contact your organization admin or repository admin to enable it. See [enabling Actions section in the documentation](https://docs.github.com/en/enterprise-cloud@latest/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) for more details._
 
