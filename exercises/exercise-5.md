@@ -6,7 +6,7 @@ In your repository, `click` on the [`Actions`](../../../actions) tab
 
 _**NOTE:** If `Actions`tab is not available (this should not happen since you are looking to scan Actions workflows after all), please contact your organization admin or repository admin to enable it. See [enabling Actions section in the documentation](https://docs.github.com/en/enterprise-cloud@latest/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) for more details._
 
-This will take you to the `Actions` page and now click on the `new workflow` button to create a workflow. Alternatively, you can click [this link](../../actions/new).
+This will take you to the `Actions` page and now click on the `new workflow` button to create a workflow. Alternatively, you can click [this link](../../../actions/new).
 
 This will put you in the `starter workflows` page. Enter `CodeQL Analysis` in the `Search` field and search. 
 You should see one result. Click on `Configure` button on the resulting workflow template. This will take you to the edit window of the the workflow file.
