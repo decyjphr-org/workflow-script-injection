@@ -1,4 +1,4 @@
-<h1 align="center">Understanding the risk of script Injections in GitHub Actions workflows</h1>
+<h1 align="center">Understanding the risk of script injection in GitHub Actions workflows</h1>
 <h5 align="center">@robandpdx</h5>
 <h5 align="center">@decyjphr</h5>
 
@@ -8,7 +8,7 @@
   <a href="#learning-objectives">Learning Objectives</a>
 </p>
 
-> Please provide a description of your workshop.
+In this workshop we will learn about the risk of script injection in GitHub Actions workflows, and how to mitigate that risk.  
 
 - **Who is this for**: developers, devops engineers
 - **What you'll learn**: the risk of script Injections in GitHub Actions workflows, and how to migirate that risk
