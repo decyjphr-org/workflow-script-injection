@@ -11,3 +11,4 @@ These workflows are vulnerable to script injection. Let's find out why.
 [Exercise 3](./exercises/exercise-3.md)  
 [Exercise 4](./exercises/exercise-4.md)  
 [Exercise 5](./exercises/exercise-5.md)  
+[Exercise 6](./exercises/exercise-6.md)  
