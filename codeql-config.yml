@@ -1,0 +1,8 @@
+packs:
+  # Use the latest version of 'codeql-javascript' published by 'advanced-security'
+  - advanced-security/codeql-javascript
+query-filters:
+  - include:
+      tags contain: actions
+paths:
+  - '.github/workflows'
