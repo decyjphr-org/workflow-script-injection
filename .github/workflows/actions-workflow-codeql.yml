@@ -7,8 +7,7 @@ name: "Actions WorkFlow CodeQL"
 on:
   push:
     branches: [ "main" ]
-  workflow_dispatch:
-    
+
 jobs:
   analyze:
     name: Analyze
