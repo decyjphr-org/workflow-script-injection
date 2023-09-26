@@ -11,8 +11,8 @@
 In this workshop we will learn about the risk of script injection in GitHub Actions workflows, and how to mitigate that risk.  
 
 - **Who is this for**: developers, devops engineers
-- **What you'll learn**: the risk of script Injections in GitHub Actions workflows, and how to migirate that risk
-- **What you'll build**: workflows that are not vulnerable to script injection attacks
+- **What you'll learn**: the risk of Script Injections in GitHub Actions workflows, and how to migirate that risk, how to use CodeQL to detect vulnerabilities in Workflows, write custom queries to customize detection of issues in Workflows.
+- **What you'll build**: Workflows that are not vulnerable to script injection attacks, CodeQL workflows to detect vulnerabilties, and custom CodeQL queries.
 
 ## Learning Objectives
 
@@ -24,8 +24,9 @@ In this workshop, you will:
 
 ## :mega: Prerequisites
 Before joining the workshop, there are a few items that you will need to install or bring with you.
-- an org with actions enabled
-- an org with GHAS enabled
+- a GitHub account
+- Visual Studio Code IDE installed on your laptop
+
 
 ## :bomb: Exercise 1: Script injection in the run command
 
